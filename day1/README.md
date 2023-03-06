@@ -1,0 +1,37 @@
+# One and a half months recap and sprint for legacy fullstack certificate
+- Week 1: Responsive Web Design
+-- 
+-- 
+-- 
+-- 
+-- 
+- Week 2: JavaScript Algorithms and Data Structures
+-- 
+-- 
+-- 
+-- 
+-- 
+- Week 3: Front End Development Libraries
+-- 
+-- 
+-- 
+-- 
+-- 
+- Week 4: Data Visualization
+-- 
+-- 
+-- 
+-- 
+-- 
+- Week 5: Back End Development And APIs
+-- 
+-- 
+-- 
+-- 
+-- 
+- Week 6: Legacy Information Security and Quality Assurance
+-- 
+-- 
+-- 
+-- 
+-- 
