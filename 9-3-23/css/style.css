@@ -1,0 +1,266 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* VARIABLES */
+:root {
+  --heroBackground: #022022;
+  --headerFooter: #3f6668;
+  --primaryColor: rgb(52, 52, 148);
+  --primaryHover: rgb(16, 16, 47);
+  --secondaryColor: rgb(91, 91, 98);
+}
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.54;
+}
+
+img {
+  width: 100%;
+}
+
+/* UTILITY CLASSES */
+.container {
+  max-width: 1100px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 3rem;
+  text-align: center;
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  border-radius: 3px;
+  background-color: var(--headerFooter);
+  transition: all 0.5 ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--primaryHover);
+}
+
+/* About */
+#about {
+  height: 100vh;
+  background-color: var(--heroBackground);
+}
+#navbar {
+  background-color: var(--headerFooter);
+  color: #fff;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100vw;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+#navbar ul a {
+  display: inline-block;
+  padding: 1.2rem 2rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+#navbar ul a:hover {
+  background-color: var(--primaryHover);
+}
+
+/* CONTAINER */
+
+#about .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 2rem;
+  color: #eee;
+  font-weight: 400;
+}
+
+/* WORK */
+#work {
+  text-align: center;
+  width: 100%;
+  padding: 7rem 0.1rem;
+  background-color: var(--secondaryColor);
+}
+
+#work .projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem 2rem;
+  margin-top: 2rem;
+}
+
+#work .container > h1 {
+  font-size: 2.6rem;
+  color: #fff;
+  font-weight: bolder;
+  text-transform: capitalize;
+  margin-bottom: 0.6rem;
+}
+
+#work .bottom-line {
+  height: 6px;
+  background-color: #fff;
+  width: 65%;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+#work .projects .box {
+  background-color: #eee;
+  border: 5px solid #eee;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+#work .projects .box a {
+  display: inline-block;
+  cursor: pointer;
+  transition: all;
+  text-decoration: none;
+}
+
+#work .projects .box a p {
+  padding: 1rem;
+  font-size: 1.4em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondaryColor);
+}
+
+.code {
+  color: #eee;
+  transition: 0.5s all ease;
+  font-size: 1.6rem;
+}
+
+#work .projects .box:hover .code {
+  color: var(--secondaryColor);
+}
+
+/* CONTACT */
+
+#contact {
+  height: 100%;
+  background-color: var(--heroBackground);
+  color: #fff;
+}
+
+#contact .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#contact .container h1 {
+  font-size: 3.4rem;
+  font-weight: bolder;
+  padding-bottom: 1rem;
+}
+
+#contact .container p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+#contact .container .social > div a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #eee;
+  margin: 1rem 2rem;
+  font-weight: bolder;
+  transition: transform 0.5s;
+}
+
+#contact .container .social > div a:hover {
+  transform: translateY(-5px);
+}
+
+/* FOOTER SECTION */
+#main-footer {
+  /* border-top: 4px solid var(--primaryColor); */
+  padding: 1rem;
+  background-color: var(--headerFooter);
+  color: #fff;
+}
+
+#main-footer .container {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--headerFooter);
+  padding: 1rem 0rem;
+}
+#main-footer .container p {
+  font-size: 1.2rem;
+}
+
+#main-footer #creator a {
+  text-decoration: underline;
+  color: #eee;
+  line-height: 1.5;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  #work .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #navbar {
+    padding: 0rem 1rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  #work .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 665px) {
+  #main-footer .container {
+    flex-direction: column;
+  }
+}

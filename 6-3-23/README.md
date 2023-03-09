@@ -1,4 +1,4 @@
-# One and a half months recap and sprint for legacy fullstack certificate
+# One and a half months recap and sprint for legacy fullstack certificate Start Date: 06/03/2023 - End Date: 10/04/2023
 - Week 1: Responsive Web Design
 -- 
 -- 
